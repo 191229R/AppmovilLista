@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'abaout1',
+    loadChildren: () => import('./page/abaout1/abaout1.module').then( m => m.Abaout1PageModule)
+  },
+  {
+    path: 'abaout2',
+    loadChildren: () => import('./page/abaout2/abaout2.module').then( m => m.Abaout2PageModule)
+  },
+  {
+    path: 'abaout3',
+    loadChildren: () => import('./page/abaout3/abaout3.module').then( m => m.Abaout3PageModule)
+  },
+  {
+    path: 'abaout4',
+    loadChildren: () => import('./page/abaout4/abaout4.module').then( m => m.Abaout4PageModule)
+  },
+  {
+    path: 'abaout5',
+    loadChildren: () => import('./page/abaout5/abaout5.module').then( m => m.Abaout5PageModule)
+  },
 ];
 
 @NgModule({

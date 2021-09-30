@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-col>
+      <div class="ion-text-center">
+        <h3>Abaout 1</h3>
+      </div>
+    </ion-col>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><ion-button  shape="round" color="success" expand="block" (click)="Regresar()">Home</ion-button></ion-card>
+
+  <ion-card *ngFor="let item of datosLlamados">
+    <ion-item>
+      <ion-avatar slot="start">
+        <img [src]="item.foto">
+      </ion-avatar>
+      <ion-label>
+        <h2>Usuario:{{item.user}}</h2>
+        <h2>Nombre:{{item.nombre}}</h2>
+      </ion-label>
+    </ion-item>
+  </ion-card>
+  
+</ion-content>

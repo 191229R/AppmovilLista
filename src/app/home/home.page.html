@@ -1,20 +1,30 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
+    <ion-col>
+      <div class="ion-text-center">
+        <h3>Home</h3>
+      </div>
+    </ion-col>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <ion-col>
+    <div class="ion-text-center">
+      <h3>Seleccione alguna de las paginas siguientes</h3>
+    </div>
+  </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+    <ion-button color="success"  expand="block" fill="outline" (click)="page1()">Pagina 1</ion-button>
+    <br>
+    <ion-button color="success"  expand="block" fill="outline"(click)="page2()">Pagina 2</ion-button>
+    <br>
+    <ion-button color="success"  expand="block" fill="outline" (click)="page3()">Pagina 3</ion-button>
+    <br>
+    <ion-button color="success"  expand="block" fill="outline"(click)="page4()">Pagina 4</ion-button>
+    <br>
+    <ion-button color="success"  expand="block" fill="outline" (click)="page5()">Pagina 5</ion-button>
+    <br>
+    <ion-button color="success"  expand="block" fill="outline" (click)="page6()">Pagina 6</ion-button>
+    
+    
