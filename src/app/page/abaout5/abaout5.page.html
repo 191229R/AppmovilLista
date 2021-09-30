@@ -1,9 +1,30 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>abaout5</ion-title>
+    <ion-col>
+      <div class="ion-text-center">
+        <h3>Abaout 1</h3>
+      </div>
+    </ion-col>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card><ion-button  shape="round" color="success" expand="block" (click)="Regresar()">Home</ion-button></ion-card>
 
+  <ion-card *ngFor="let item of datosLlamados">
+    <ion-item>
+     
+       <ion-col>
+      <div class="ion-text-center">
+        <h3>Informacion de la Banda Asking Alexandria:{{item.nombre}}</h3>
+      </div>
+    </ion-col>
+      <h3>
+       <ion-img width="20" height="80" src={{item.foto}}></ion-img>
+     </h3>
+
+    
+    </ion-item>
+  </ion-card>
+  
 </ion-content>
